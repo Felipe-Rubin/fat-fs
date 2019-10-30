@@ -1,0 +1,25 @@
+# Display Hex
+- hexdump -C -v fat.part
+
+# Compile With Debugging
+gcc app.c -o app -D DEBUGGING
+
+# File Information
+- 1x Sector = 512 Bytes
+- 1x Cluster =  2x Clusters = 1024 Bytes
+- Full Size = 4096x Clusters = 4096 * 1024 = 4.194.304 = 4MB
+
+
+# Directory Entry
+- 1x dir_entry_t = 32 Bytes
+- There are 32 entries in all.
+- 32x entries = 1 Cluster = 1024 Bytes
+
+# FAT
+- 16 bits
+- 8x Clusters = 8192 Bytes
+- 4096x Entries of 16 bits = 8192 Bytes
+
+
+
+
